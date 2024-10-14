@@ -62,11 +62,11 @@ namespace SafeExamBrowser.Configuration.ConfigurationData
 			appConfig.CodeSignatureHash = certificate?.GetCertHashString();
 			appConfig.ConfigurationFileExtension = ".seb";
 			appConfig.ConfigurationFileMimeType = "application/seb";
-			appConfig.ProgramBuildVersion = programBuild;
-			appConfig.ProgramCopyright = programCopyright;
+			appConfig.ProgramBuildVersion = "v. хуй знаеть блять";
+			appConfig.ProgramCopyright = "Ебись оно в рот, блять";
 			appConfig.ProgramDataFilePath = Path.Combine(programDataFolder, DEFAULT_CONFIGURATION_NAME);
 			appConfig.ProgramTitle = programTitle;
-			appConfig.ProgramInformationalVersion = programVersion;
+			appConfig.ProgramInformationalVersion = "v. хуй знаеть блять";
 			appConfig.RuntimeId = Guid.NewGuid();
 			appConfig.RuntimeAddress = $"{AppConfig.BASE_ADDRESS}/runtime/{Guid.NewGuid()}";
 			appConfig.RuntimeLogFilePath = Path.Combine(logFolder, $"{logFilePrefix}_Runtime.log");
