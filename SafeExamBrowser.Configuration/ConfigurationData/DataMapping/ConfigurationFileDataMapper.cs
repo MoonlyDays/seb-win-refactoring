@@ -31,7 +31,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 
 			if (value is int mode)
 			{
-				settings.ConfigurationMode = mode == CONFIGURE_CLIENT ? ConfigurationMode.ConfigureClient : ConfigurationMode.Exam;
+				settings.ConfigurationMode = ConfigurationMode.ConfigureClient; //; mode == CONFIGURE_CLIENT ? ConfigurationMode.ConfigureClient : ConfigurationMode.Exam;
 			}
 		}
 

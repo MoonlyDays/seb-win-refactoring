@@ -15,7 +15,6 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 	{
 		internal override void Map(string key, object value, AppSettings settings)
 		{
-			return;
 			switch (key)
 			{
 				case Keys.UserInterface.ActionCenter.EnableActionCenter:
@@ -58,7 +57,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool enable)
 			{
-				settings.UserInterface.ActionCenter.EnableActionCenter = enable;
+				// settings.UserInterface.ActionCenter.EnableActionCenter = enable;
 			}
 		}
 
@@ -66,7 +65,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is string color)
 			{
-				settings.UserInterface.LockScreen.BackgroundColor = color;
+				// settings.UserInterface.LockScreen.BackgroundColor = color;
 			}
 		}
 
@@ -74,8 +73,8 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool show)
 			{
-				settings.UserInterface.ActionCenter.ShowAudio = show;
-				settings.UserInterface.Taskbar.ShowAudio = show;
+				// settings.UserInterface.ActionCenter.ShowAudio = show;
+				// settings.UserInterface.Taskbar.ShowAudio = show;
 			}
 		}
 
@@ -83,8 +82,8 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool show)
 			{
-				settings.UserInterface.ActionCenter.ShowClock = show;
-				settings.UserInterface.Taskbar.ShowClock = show;
+				// settings.UserInterface.ActionCenter.ShowClock = show;
+				// settings.UserInterface.Taskbar.ShowClock = show;
 			}
 		}
 
@@ -92,8 +91,8 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool show)
 			{
-				settings.UserInterface.ActionCenter.ShowKeyboardLayout = show;
-				settings.UserInterface.Taskbar.ShowKeyboardLayout = show;
+				// settings.UserInterface.ActionCenter.ShowKeyboardLayout = show;
+				// settings.UserInterface.Taskbar.ShowKeyboardLayout = show;
 			}
 		}
 
@@ -101,8 +100,8 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool show)
 			{
-				settings.UserInterface.ActionCenter.ShowNetwork = show;
-				settings.UserInterface.Taskbar.ShowNetwork = show;
+				// settings.UserInterface.ActionCenter.ShowNetwork = show;
+				// settings.UserInterface.Taskbar.ShowNetwork = show;
 			}
 		}
 
@@ -110,7 +109,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is double threshold)
 			{
-				settings.PowerSupply.ChargeThresholdCritical = threshold;
+				// settings.PowerSupply.ChargeThresholdCritical = threshold;
 			}
 		}
 
@@ -118,7 +117,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is double threshold)
 			{
-				settings.PowerSupply.ChargeThresholdLow = threshold;
+				// settings.PowerSupply.ChargeThresholdLow = threshold;
 			}
 		}
 
@@ -126,7 +125,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool enable)
 			{
-				settings.UserInterface.Taskbar.EnableTaskbar = enable;
+				// settings.UserInterface.Taskbar.EnableTaskbar = enable;
 			}
 		}
 
@@ -134,7 +133,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool show)
 			{
-				settings.UserInterface.Taskbar.ShowApplicationLog = show;
+				// settings.UserInterface.Taskbar.ShowApplicationLog = show;
 			}
 		}
 

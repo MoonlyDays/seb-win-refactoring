@@ -32,7 +32,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is int volume)
 			{
-				settings.Audio.InitialVolume = volume;
+				// settings.Audio.InitialVolume = volume;
 			}
 		}
 
@@ -40,7 +40,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool mute)
 			{
-				settings.Audio.MuteAudio = mute;
+				// settings.Audio.MuteAudio = mute;
 			}
 		}
 
@@ -48,7 +48,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool initialize)
 			{
-				settings.Audio.InitializeVolume = initialize;
+				// settings.Audio.InitializeVolume = initialize;
 			}
 		}
 	}

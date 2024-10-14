@@ -14,7 +14,6 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 	{
 		internal override void Map(string key, object value, AppSettings settings)
 		{
-			return;
 			switch (key)
 			{
 				case Keys.Display.AllowedDisplays:
@@ -36,7 +35,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is int count)
 			{
-				settings.Display.AllowedDisplays = count;
+				// settings.Display.AllowedDisplays = count;
 			}
 		}
 
@@ -52,7 +51,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool ignore)
 			{
-				settings.Display.IgnoreError = ignore;
+				// settings.Display.IgnoreError = ignore;
 			}
 		}
 
@@ -60,7 +59,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool internalOnly)
 			{
-				settings.Display.InternalDisplayOnly = internalOnly;
+				// settings.Display.InternalDisplayOnly = internalOnly;
 			}
 		}
 	}

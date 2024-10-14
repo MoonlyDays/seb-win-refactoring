@@ -16,7 +16,6 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 	{
 		internal override void Map(string key, object value, AppSettings settings)
 		{
-			return;
 			switch (key)
 			{
 				case Keys.Proctoring.ForceRaiseHandMessage:

@@ -15,7 +15,6 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 	{
 		internal override void Map(string key, object value, AppSettings settings)
 		{
-			return;
 			switch (key)
 			{
 				case Keys.Service.EnableChromeNotifications:
@@ -73,7 +72,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool enable)
 			{
-				settings.Service.DisableChromeNotifications = !enable;
+				// settings.Service.DisableChromeNotifications = !enable;
 			}
 		}
 
@@ -81,7 +80,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool enable)
 			{
-				settings.Service.DisableEaseOfAccessOptions = !enable;
+				// settings.Service.DisableEaseOfAccessOptions = !enable;
 			}
 		}
 
@@ -89,7 +88,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool enable)
 			{
-				settings.Service.DisableFindPrinter = !enable;
+				// settings.Service.DisableFindPrinter = !enable;
 			}
 		}
 
@@ -97,7 +96,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool enable)
 			{
-				settings.Service.DisableNetworkOptions = !enable;
+				// settings.Service.DisableNetworkOptions = !enable;
 			}
 		}
 
@@ -105,7 +104,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool enable)
 			{
-				settings.Service.DisablePasswordChange = !enable;
+				// settings.Service.DisablePasswordChange = !enable;
 			}
 		}
 
@@ -113,7 +112,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool enable)
 			{
-				settings.Service.DisablePowerOptions = !enable;
+				// settings.Service.DisablePowerOptions = !enable;
 			}
 		}
 
@@ -121,7 +120,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool enable)
 			{
-				settings.Service.DisableRemoteConnections = !enable;
+				// settings.Service.DisableRemoteConnections = !enable;
 			}
 		}
 
@@ -129,7 +128,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool enable)
 			{
-				settings.Service.DisableSignout = !enable;
+				// settings.Service.DisableSignout = !enable;
 			}
 		}
 
@@ -137,7 +136,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool enable)
 			{
-				settings.Service.DisableTaskManager = !enable;
+				// settings.Service.DisableTaskManager = !enable;
 			}
 		}
 
@@ -145,7 +144,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool enable)
 			{
-				settings.Service.DisableUserLock = !enable;
+				// settings.Service.DisableUserLock = !enable;
 			}
 		}
 
@@ -153,7 +152,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool enable)
 			{
-				settings.Service.DisableUserSwitch = !enable;
+				// settings.Service.DisableUserSwitch = !enable;
 			}
 		}
 
@@ -161,7 +160,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool enable)
 			{
-				settings.Service.DisableVmwareOverlay = !enable;
+				// settings.Service.DisableVmwareOverlay = !enable;
 			}
 		}
 
@@ -169,7 +168,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool enable)
 			{
-				settings.Service.DisableWindowsUpdate = !enable;
+				// settings.Service.DisableWindowsUpdate = !enable;
 			}
 		}
 
@@ -177,7 +176,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool ignore)
 			{
-				settings.Service.IgnoreService = ignore;
+				// settings.Service.IgnoreService = ignore;
 			}
 		}
 
@@ -188,7 +187,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 
 			if (value is int policy)
 			{
-				settings.Service.Policy = policy == FORCE ? ServicePolicy.Mandatory : (policy == WARN ? ServicePolicy.Warn : ServicePolicy.Optional);
+				// settings.Service.Policy = policy == FORCE ? ServicePolicy.Mandatory : (policy == WARN ? ServicePolicy.Warn : ServicePolicy.Optional);
 			}
 		}
 
@@ -196,7 +195,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool set)
 			{
-				settings.Service.SetVmwareConfiguration = set;
+				// settings.Service.SetVmwareConfiguration = set;
 			}
 		}
 	}

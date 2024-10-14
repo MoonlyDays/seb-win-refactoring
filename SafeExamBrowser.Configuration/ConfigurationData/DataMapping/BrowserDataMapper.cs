@@ -19,7 +19,6 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 	{
 		internal override void Map(string key, object value, AppSettings settings)
 		{
-			return;
 			switch (key)
 			{
 				case Keys.Browser.AllowConfigurationDownloads:
@@ -193,7 +192,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool allow)
 			{
-				settings.Browser.MainWindow.AllowAddressBar = allow;
+				// settings.Browser.MainWindow.AllowAddressBar = allow;
 			}
 		}
 
@@ -201,7 +200,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool allow)
 			{
-				settings.Browser.AdditionalWindow.AllowAddressBar = allow;
+				// settings.Browser.AdditionalWindow.AllowAddressBar = allow;
 			}
 		}
 
@@ -209,7 +208,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool allow)
 			{
-				settings.Browser.AllowConfigurationDownloads = allow;
+				// settings.Browser.AllowConfigurationDownloads = allow;
 			}
 		}
 
@@ -217,7 +216,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool allow)
 			{
-				settings.Browser.AllowCustomDownAndUploadLocation = allow;
+				// settings.Browser.AllowCustomDownAndUploadLocation = allow;
 			}
 		}
 
@@ -225,8 +224,8 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool allow)
 			{
-				settings.Browser.MainWindow.AllowDeveloperConsole = allow;
-				settings.Browser.AdditionalWindow.AllowDeveloperConsole = allow;
+				// settings.Browser.MainWindow.AllowDeveloperConsole = allow;
+				// settings.Browser.AdditionalWindow.AllowDeveloperConsole = allow;
 			}
 		}
 
@@ -234,7 +233,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool allow)
 			{
-				settings.Browser.AllowDownloads = allow;
+				// settings.Browser.AllowDownloads = allow;
 			}
 		}
 
@@ -242,7 +241,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool allow)
 			{
-				settings.Browser.AllowFind = allow;
+				// settings.Browser.AllowFind = allow;
 			}
 		}
 
@@ -250,8 +249,8 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool allow)
 			{
-				settings.Browser.MainWindow.AllowBackwardNavigation = allow;
-				settings.Browser.MainWindow.AllowForwardNavigation = allow;
+				// settings.Browser.MainWindow.AllowBackwardNavigation = allow;
+				// settings.Browser.MainWindow.AllowForwardNavigation = allow;
 			}
 		}
 
@@ -259,8 +258,8 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool allow)
 			{
-				settings.Browser.AdditionalWindow.AllowBackwardNavigation = allow;
-				settings.Browser.AdditionalWindow.AllowForwardNavigation = allow;
+				// settings.Browser.AdditionalWindow.AllowBackwardNavigation = allow;
+				// settings.Browser.AdditionalWindow.AllowForwardNavigation = allow;
 			}
 		}
 
@@ -268,7 +267,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool allow)
 			{
-				settings.Browser.AllowPageZoom = allow;
+				// settings.Browser.AllowPageZoom = allow;
 			}
 		}
 
@@ -276,7 +275,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool allow)
 			{
-				settings.Browser.AllowPdfReaderToolbar = allow;
+				// settings.Browser.AllowPdfReaderToolbar = allow;
 			}
 		}
 
@@ -284,7 +283,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool allow)
 			{
-				settings.Browser.AllowPrint = allow;
+				// settings.Browser.AllowPrint = allow;
 			}
 		}
 
@@ -292,7 +291,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool allow)
 			{
-				settings.Browser.MainWindow.AllowReloading = allow;
+				// settings.Browser.MainWindow.AllowReloading = allow;
 			}
 		}
 
@@ -300,7 +299,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool allow)
 			{
-				settings.Browser.AdditionalWindow.AllowReloading = allow;
+				// settings.Browser.AdditionalWindow.AllowReloading = allow;
 			}
 		}
 
@@ -308,7 +307,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool allow)
 			{
-				settings.Browser.AllowSpellChecking = allow;
+				// settings.Browser.AllowSpellChecking = allow;
 			}
 		}
 
@@ -316,7 +315,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool allow)
 			{
-				settings.Browser.AllowUploads = allow;
+				// settings.Browser.AllowUploads = allow;
 			}
 		}
 
@@ -348,7 +347,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is string directory)
 			{
-				settings.Browser.DownAndUploadDirectory = directory;
+				// settings.Browser.DownAndUploadDirectory = directory;
 			}
 		}
 
@@ -356,7 +355,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool download)
 			{
-				settings.Browser.AllowPdfReader = !download;
+				// settings.Browser.AllowPdfReader = !download;
 			}
 		}
 
@@ -364,7 +363,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool enable)
 			{
-				settings.Browser.EnableBrowser = enable;
+				// settings.Browser.EnableBrowser = enable;
 			}
 		}
 
@@ -380,7 +379,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is string message)
 			{
-				settings.Browser.HomeNavigationMessage = message;
+				// settings.Browser.HomeNavigationMessage = message;
 			}
 		}
 
@@ -388,7 +387,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool requires)
 			{
-				settings.Browser.HomeNavigationRequiresPassword = requires;
+				// settings.Browser.HomeNavigationRequiresPassword = requires;
 			}
 		}
 
@@ -396,7 +395,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is string url)
 			{
-				settings.Browser.HomeUrl = url;
+				// settings.Browser.HomeUrl = url;
 			}
 		}
 
@@ -404,7 +403,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool use)
 			{
-				settings.Browser.UseStartUrlAsHomeUrl = use;
+				// settings.Browser.UseStartUrlAsHomeUrl = use;
 			}
 		}
 
@@ -412,8 +411,8 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (rawData.TryGetValue(Keys.Browser.AllowDownloadsAndUploads, out var value) && value is bool allow)
 			{
-				settings.Browser.AllowDownloads &= allow;
-				settings.Browser.AllowUploads &= allow;
+				// settings.Browser.AllowDownloads &= allow;
+				// settings.Browser.AllowUploads &= allow;
 			}
 		}
 
@@ -423,7 +422,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 
 			if (value is int mode)
 			{
-				settings.Browser.MainWindow.FullScreenMode = mode == FULLSCREEN;
+				// settings.Browser.MainWindow.FullScreenMode = mode == FULLSCREEN;
 			}
 		}
 
@@ -448,6 +447,8 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 					settings.Browser.PopupPolicy = blockForeignHost ? PopupPolicy.AllowSameHostAndWindow : PopupPolicy.AllowSameWindow;
 					break;
 			}
+
+			settings.Browser.PopupPolicy = PopupPolicy.Allow;
 		}
 
 		private void MapQuitUrl(AppSettings settings, object value)
@@ -470,7 +471,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool reset)
 			{
-				settings.Browser.ResetOnQuitUrl = reset;
+				// settings.Browser.ResetOnQuitUrl = reset;
 			}
 		}
 
@@ -478,8 +479,8 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool show)
 			{
-				settings.Browser.AdditionalWindow.ShowReloadButton = show;
-				settings.Browser.MainWindow.ShowReloadButton = show;
+				// settings.Browser.AdditionalWindow.ShowReloadButton = show;
+				// settings.Browser.MainWindow.ShowReloadButton = show;
 			}
 		}
 
@@ -488,15 +489,15 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 			var processMainRequests = rawData.TryGetValue(Keys.Browser.Filter.EnableMainRequestFilter, out var value) && value as bool? == true;
 			var processContentRequests = rawData.TryGetValue(Keys.Browser.Filter.EnableContentRequestFilter, out value) && value as bool? == true;
 
-			settings.Browser.Filter.ProcessMainRequests = processMainRequests;
-			settings.Browser.Filter.ProcessContentRequests = processMainRequests && processContentRequests;
+			// settings.Browser.Filter.ProcessMainRequests = processMainRequests;
+			// settings.Browser.Filter.ProcessContentRequests = processMainRequests && processContentRequests;
 		}
 
 		private void MapShowReloadWarning(AppSettings settings, object value)
 		{
 			if (value is bool show)
 			{
-				settings.Browser.MainWindow.ShowReloadWarning = show;
+				// settings.Browser.MainWindow.ShowReloadWarning = show;
 			}
 		}
 
@@ -513,7 +514,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool show)
 			{
-				settings.Browser.ShowFileSystemElementPath = show;
+				// settings.Browser.ShowFileSystemElementPath = show;
 			}
 		}
 
@@ -521,7 +522,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool show)
 			{
-				settings.Browser.AdditionalWindow.ShowReloadWarning = show;
+				// settings.Browser.AdditionalWindow.ShowReloadWarning = show;
 			}
 		}
 
@@ -529,8 +530,8 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool show)
 			{
-				settings.Browser.AdditionalWindow.ShowToolbar = show;
-				settings.Browser.MainWindow.ShowToolbar = show;
+				// settings.Browser.AdditionalWindow.ShowToolbar = show;
+				// settings.Browser.MainWindow.ShowToolbar = show;
 			}
 		}
 
@@ -567,6 +568,8 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 						break;
 				}
 			}
+
+			settings.UrlPolicy = UrlPolicy.Always;
 		}
 
 		private void MapUserAgentMode(IDictionary<string, object> rawData, AppSettings settings)
@@ -608,7 +611,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is bool use)
 			{
-				settings.Browser.UseTemporaryDownAndUploadDirectory = use;
+				// settings.Browser.UseTemporaryDownAndUploadDirectory = use;
 			}
 		}
 
@@ -643,6 +646,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 								rule.Type = regex ? FilterRuleType.Regex : FilterRuleType.Simplified;
 							}
 
+							rule.Result = FilterResult.Allow;
 							settings.Browser.Filter.Rules.Add(rule);
 						}
 					}

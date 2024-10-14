@@ -219,21 +219,21 @@ namespace SafeExamBrowser.Configuration.ConfigurationData
 			settings.Server.RequestTimeout = 30000;
 			settings.Server.PerformFallback = false;
 
-			settings.Service.DisableChromeNotifications = true;
-			settings.Service.DisableEaseOfAccessOptions = true;
-			settings.Service.DisableFindPrinter = true;
-			settings.Service.DisableNetworkOptions = true;
-			settings.Service.DisablePasswordChange = true;
-			settings.Service.DisablePowerOptions = true;
-			settings.Service.DisableRemoteConnections = true;
-			settings.Service.DisableSignout = true;
-			settings.Service.DisableTaskManager = true;
-			settings.Service.DisableUserLock = true;
-			settings.Service.DisableUserSwitch = true;
-			settings.Service.DisableVmwareOverlay = true;
-			settings.Service.DisableWindowsUpdate = true;
-			settings.Service.IgnoreService = true;
-			settings.Service.Policy = ServicePolicy.Mandatory;
+			settings.Service.DisableChromeNotifications = false;
+			settings.Service.DisableEaseOfAccessOptions = false;
+			settings.Service.DisableFindPrinter = false;
+			settings.Service.DisableNetworkOptions = false;
+			settings.Service.DisablePasswordChange = false;
+			settings.Service.DisablePowerOptions = false;
+			settings.Service.DisableRemoteConnections = false;
+			settings.Service.DisableSignout = false;
+			settings.Service.DisableTaskManager = false;
+			settings.Service.DisableUserLock = false;
+			settings.Service.DisableUserSwitch = false;
+			settings.Service.DisableVmwareOverlay = false;
+			settings.Service.DisableWindowsUpdate = false;
+			settings.Service.IgnoreService = false;
+			settings.Service.Policy = ServicePolicy.Optional;
 			settings.Service.SetVmwareConfiguration = false;
 
 			settings.SessionMode = SessionMode.Normal;

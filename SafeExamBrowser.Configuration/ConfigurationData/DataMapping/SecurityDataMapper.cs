@@ -18,7 +18,6 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 	{
 		internal override void Map(string key, object value, AppSettings settings)
 		{
-			return;
 			switch (key)
 			{
 				case Keys.Security.AdminPasswordHash:
@@ -70,22 +69,20 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 		{
 			if (value is string hash)
 			{
-				settings.Security.AdminPasswordHash = hash;
+				// settings.Security.AdminPasswordHash = hash;
 			}
 		}
 
 		private void MapAllowReconfiguration(AppSettings settings, object value)
 		{
-			return;
 			if (value is bool allow)
 			{
-				settings.Security.AllowReconfiguration = allow;
+				// settings.Security.AllowReconfiguration = allow;
 			}
 		}
 
 		private void MapAllowStickyKeys(AppSettings settings, object value)
 		{
-			return;
 			if (value is bool allow)
 			{
 				settings.Security.AllowStickyKeys = allow;
@@ -94,10 +91,9 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 
 		private void MapAllowTermination(AppSettings settings, object value)
 		{
-			return;
 			if (value is bool allow)
 			{
-				settings.Security.AllowTermination = allow;
+				// settings.Security.AllowTermination = allow;
 			}
 		}
 
@@ -123,7 +119,6 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 
 		private void MapKioskMode(IDictionary<string, object> rawData, AppSettings settings)
 		{
-			return;
 			var hasCreateNewDesktop = rawData.TryGetValue(Keys.Security.KioskModeCreateNewDesktop, out var createNewDesktop);
 			var hasDisableExplorerShell = rawData.TryGetValue(Keys.Security.KioskModeDisableExplorerShell, out var disableExplorerShell);
 
@@ -137,55 +132,46 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 				settings.Security.KioskMode = KioskMode.CreateNewDesktop;
 			}
 
-			if (hasCreateNewDesktop && hasDisableExplorerShell && createNewDesktop as bool? == false && disableExplorerShell as bool? == false)
-			{
-				settings.Security.KioskMode = KioskMode.None;
-			}
+			settings.Security.KioskMode = KioskMode.None;
 		}
 
 		private void MapQuitPasswordHash(AppSettings settings, object value)
 		{
-
-			return;
 			if (value is string hash)
 			{
-				settings.Security.QuitPasswordHash = hash;
+				// settings.Security.QuitPasswordHash = hash;
 			}
 		}
 
 		private void MapClipboardPolicy(AppSettings settings, object value)
 		{
-			return;
 			const int ALLOW = 0;
 			const int BLOCK = 1;
 
 			if (value is int policy)
 			{
-				settings.Security.ClipboardPolicy = policy == ALLOW ? ClipboardPolicy.Allow : (policy == BLOCK ? ClipboardPolicy.Block : ClipboardPolicy.Isolated);
+				// settings.Security.ClipboardPolicy = policy == ALLOW ? ClipboardPolicy.Allow : (policy == BLOCK ? ClipboardPolicy.Block : ClipboardPolicy.Isolated);
 			}
 		}
 
 		private void MapDisableSessionChangeLockScreen(AppSettings settings, object value)
 		{
-			return;
 			if (value is bool disable)
 			{
-				settings.Security.DisableSessionChangeLockScreen = disable;
+				// settings.Security.DisableSessionChangeLockScreen = disable;
 			}
 		}
 
 		private void MapVirtualMachinePolicy(AppSettings settings, object value)
 		{
-			return;
 			if (value is bool allow)
 			{
-				settings.Security.VirtualMachinePolicy = allow ? VirtualMachinePolicy.Allow : VirtualMachinePolicy.Deny;
+				// settings.Security.VirtualMachinePolicy = allow ? VirtualMachinePolicy.Allow : VirtualMachinePolicy.Deny;
 			}
 		}
 
 		private void MapReconfigurationUrl(AppSettings settings, object value)
 		{
-			return;
 			if (value is string url)
 			{
 				settings.Security.ReconfigurationUrl = url;
@@ -194,25 +180,23 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 
 		private void MapVerifyCursorConfiguration(AppSettings settings, object value)
 		{
-			return;
 			if (value is bool verify)
 			{
-				settings.Security.VerifyCursorConfiguration = verify;
+				// settings.Security.VerifyCursorConfiguration = verify;
 			}
 		}
 
 		private void MapVerifySessionIntegrity(AppSettings settings, object value)
 		{
-			return;
 			if (value is bool verify)
 			{
-				settings.Security.VerifySessionIntegrity = verify;
+				// settings.Security.VerifySessionIntegrity = verify;
 			}
 		}
 
 		private void MapVersionRestrictions(AppSettings settings, object value)
 		{
-			return;
+			/*
 			if (value is IList<object> restrictions)
 			{
 				foreach (var restriction in restrictions.Cast<string>())
@@ -238,7 +222,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 						});
 					}
 				}
-			}
+			}*/
 		}
 	}
 }

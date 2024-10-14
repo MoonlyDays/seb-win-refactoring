@@ -18,14 +18,13 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 	{
 		internal override void Map(string key, object value, AppSettings settings)
 		{
-			return;
 			switch (key)
 			{
 				case Keys.Applications.Blacklist:
-					MapApplicationBlacklist(settings, value);
+					// MapApplicationBlacklist(settings, value);
 					break;
 				case Keys.Applications.Whitelist:
-					MapApplicationWhitelist(settings, value);
+					// MapApplicationWhitelist(settings, value);
 					break;
 			}
 		}
