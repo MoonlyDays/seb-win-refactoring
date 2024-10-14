@@ -54,6 +54,7 @@ namespace SafeExamBrowser.Monitoring
 
 		public bool IsVirtualMachine()
 		{
+			return false;
 			var isVirtualMachine = false;
 
 			isVirtualMachine |= HasVirtualDevice();
